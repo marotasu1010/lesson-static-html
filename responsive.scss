@@ -1,0 +1,79 @@
+@mixin column_pos {
+  float: left;
+  background-color: yellow;
+  width: 50%;
+}
+
+@mixin column_pos_rightblue {
+  float: right;
+  background-color: blue;
+  width: 50%;
+}
+
+@mixin column_pos_leftblue {
+  float: left;
+  background-color: blue;
+  width: 50%;
+}
+
+@mixin column_pos_rightyellow {
+  float: right;
+  background-color: yellow;
+  width: 50%;
+}
+
+
+  header {
+    height: 50px;
+    background-color: red;
+   }
+   
+@if $type == xs {
+  div#main {
+   @include column_pos;
+
+  }
+  aside {
+    @include column_pos_rightblue;
+  }
+}
+
+@if $type == sm {
+  div#main {
+    @include column_pos_leftblue;
+  }
+
+ aside {
+    @include column_pos_rightyellow;
+  }
+}
+
+@if $type == md {
+  div#main {
+    @include column_pos;
+  }
+
+ aside {
+    @include column_pos_rightyellow;
+  }
+}
+
+@if $type == lg {
+  div#main {
+    @include column_pos_rightyellow;
+}
+
+ aside {
+    @include column_pos_leftblue;
+  }
+}
+ footer {
+    height: 50px;
+    background-color: green;
+  }
+  
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
