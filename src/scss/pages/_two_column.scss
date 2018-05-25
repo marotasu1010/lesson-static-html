@@ -1,0 +1,16 @@
+@charset "utf-8";
+// column page
+#page--column {
+  main {
+    .full-bg {
+      position: fixed;
+      min-height: 100%;
+      min-width: 100%;
+      background-image: url(/Users/sugiyamarei/Desktop/images/photo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+}

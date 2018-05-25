@@ -10,7 +10,7 @@
       crossorigin="anonymous">
     </script>
   </head>
-  <body id='page--top'>
+  <body id='page--column'>
     <header id='static-pages-header'>
       <!-- お約束の一つ。ロゴをClickしたらTOPに戻れる -->
       <!-- Logoにh1を使うシーンは限られる -->
@@ -33,16 +33,23 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class='full-bg'>
-      </section>
-    </main>
-    <footer>
+   <main class="clearfix">
+     <section class='full-bg'>
+      <div id="column_body">
+          <div id="main">
+            Main Cloumn
+          </div>
+          <aside>
+            Sidebar
+          </aside>
+      </div>
+     </section>
+   </main>
+   <footer>
       <small>
-        (C)2018 static-pages
+         (C)2018 static-pages
       </small>
-    </footer>
-    <script src="js/index.js"></script>
+   </footer>
+   <script src="js/index.js"></script>
   </body>
 </html>
-
