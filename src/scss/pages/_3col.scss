@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+
+#hidden { 
+  .leftside{
+    height: 800px;
+    width: 34%; 
+    float: left;
+    background-color: red;
+  }   
+
+  .center{
+    height: 800px;
+    width: 33%;
+    float: left;
+    background-color: yellow;
+  } 
+
+  .rightside{
+     height: 800px;
+     width: 33%;
+     float: right;
+     background-color: green;
+  }
+}
